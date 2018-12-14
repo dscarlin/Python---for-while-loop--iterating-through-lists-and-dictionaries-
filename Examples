@@ -1,0 +1,86 @@
+#comparing two variables and updating one until it is larger than other then print 
+print "example 1"
+x=4
+i=0  
+
+while i<=x:
+  i +=1
+else:
+  print i    
+
+#comparing a variable to items in a list and updating one until it is larger than other then print 
+print "example 2"
+arraylength = [4]
+for x in arraylength:
+  i=0
+  
+  while i<=x:
+    i +=1
+  else:
+    print i    
+
+#comparing a variable to keys in a dictionary and updating one until it is larger than other then print
+print "example 3"
+arraylength = {1:'cat',2:'dog',3:'lion',4:'wolf'}
+for x in arraylength:
+  i=0
+  
+  while i<=x:
+    i +=1
+  else:
+    print i    
+
+#comparing a variable to items in a dictionary (items same as keys) and updating one until it is larger than other then print
+print "example 4"
+arraylength = {1:1,2:2,3:3,4:4}
+for x in arraylength:
+  i=0
+  
+  while i<=arraylength[x]:
+    i +=1
+  else:
+    print i 
+      
+#comparing a variable to items in a dictionary (items different from keys) and updating one until it is larger than other then print ***pay attention to order***
+print "example 5"
+arraylength = {4:3,3:5,2:1,1:9}
+for x in arraylength:
+  i=0
+  
+  while i<=arraylength[x]:
+    i +=1
+  else:
+    print i       
+
+#comparing a variable to items in a dictionary (items different from keys and some are strings ***iterates through keys in seemingly random order, why?***) and updating one until it is larger than other then print
+print "example 6"
+arraylength = {330:3,47:5,'cat':1,19:9}
+for x in arraylength:
+  i=0
+  
+  while i<=arraylength[x]:
+    i +=1
+  else:
+    print i       
+
+print "example 7"
+arraylength = {1:1,2:2,3:3,4:4}
+for x in range (len(arraylength)):
+  i=0
+  
+  while i<=x:
+    i +=1
+  else:
+    print i  
+
+print "example 8"
+arraylength = {1:1,2:2,3:3,4:4}
+for x in range (2,len(arraylength)):
+  i=0
+  
+  while i<=x:
+    i +=1
+  else:
+    print i  
+
+  
