@@ -1,0 +1,24 @@
+def find_persons_number(directory):
+	
+		firstname = raw_input("Enter First Name ")
+		lastname = raw_input("Enter Last Name ")
+		
+	
+		for (Last,First) in directory:
+			number = directory [Last,First] 
+			if (Last,First) == (lastname,firstname):
+				print First + " " + Last + " " +number
+				break
+
+			
+		
+		else:
+				print "Entry Not Found"
+				print “Hint: Capitalize only first letter"
+				find_persons_number(directory)
+
+
+
+Hunt_Club_Names= {                         ("Carlin", "David") : "368-2008",                                                                     ("Thomas", "Kenji") : "555-3232",                                                                   ("Steve", "JP"    ) : "345-3453",                                                                    ("Lee"   , "Ham"  ) : "523-5354", }
+
+find_persons_number(Hunt_Club_Names)
